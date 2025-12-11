@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a2e860a6f8.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* ========= Header & Navigation ========= */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav img {
+            width: 120px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #007bff;
+        }
+
+        /* ========= Hero Section ========= */
+        .content-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 40px;
+            gap: 50px;
+        }
+
+        .content-row .text {
+            max-width: 500px;
+        }
+
+        .content-row h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: #007bff;
+        }
+
+        .content-row p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* ========= Buttons ========= */
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            padding: 12px 25px;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056d4;
+        }
+
+        /* ========= Social Icons ========= */
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            font-size: 30px;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .social a:hover {
+            transform: scale(1.15);
+        }
+
+        /* ========= Image ========= */
+        .image-box img {
+            width: 350px;
+            border-radius: 15px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* ========= Responsive ========= */
+        @media (max-width: 900px) {
+            .content-row {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .social a {
+                margin: 0 10px;
+            }
+
+            .image-box img {
+                width: 250px;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./images/logo-removebg-preview.png" alt="Logo">
+                <ul class="nav-links">
+                    <li><a href="index.html" style="color: #007bff;">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-row">
+            <div class="text">
+                <h1>Hi there, I am <span class="highlight">Chhay Davin!</span></h1>
+                <p>
+                    Experienced full-stack developer with 1+ years of expertise in
+                    Laravel, NestJS, and Nuxt.js — building modern, scalable web
+                    applications.
+                </p>
+
+                <a href="contact.html" class="btn">Hire Me</a>
+
+                <div class="social">
+                    <a style="color: black;" href="https://github.com/Arthurdavin" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a style="color: blue;" href="https://facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="image-box">
+                <img src="./images/image.png" alt="me">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2025 Chhay Davin. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
